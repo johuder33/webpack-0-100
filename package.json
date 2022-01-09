@@ -1,0 +1,37 @@
+{
+  "name": "webpack-0-100",
+  "version": "1.0.0",
+  "description": "webpack tutorial from 0 to 100",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johuder33/webpack-0-100.git"
+  },
+  "keywords": [
+    "webpack",
+    "javascript",
+    "html",
+    "react",
+    "js",
+    "babel",
+    "evernote",
+    "course",
+    "frontend"
+  ],
+  "author": "Juorder Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johuder33/webpack-0-100/issues"
+  },
+  "homepage": "https://github.com/johuder33/webpack-0-100#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
