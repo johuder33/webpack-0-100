@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/johuder33/webpack-0-100#readme",
   "devDependencies": {
+    "babel-loader": "^8.2.3",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
