@@ -5,6 +5,7 @@ const { resolve } = require('path');
 process.env.NODE_ENV = 'development';
 
 module.exports = {
+  devtool: false,
   entry: {
     script: resolve('src', 'index.js')
   },
@@ -15,6 +16,17 @@ module.exports = {
     library: 'clipperCore',
     globalObject: 'this'
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
+    ]
+  },  
   plugins: [
     new HtmlWebpackPlugin({
       template: resolve('public', 'index.html'),
