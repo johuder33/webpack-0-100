@@ -1,4 +1,5 @@
 import './styles/index.scss';
+import cartoonImage from '../assets/images/cartoon.png';
 
 const config = {
   baseUrl: 'https://evernote.com/api',
@@ -13,6 +14,11 @@ class Webclipper {
 
   serialize() {
     console.log('Webclipper is running woohooo !!', this.config);
+  }
+
+  injectImage() {
+    const img = document.getElementById('cartoon');
+    img.src = cartoonImage;
   }
 
   static autoinit() {
