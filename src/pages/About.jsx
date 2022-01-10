@@ -1,8 +1,8 @@
-import Navigation from '../components/Navigation';
-import Content from '../components/Content';
-import Title from '../components/Title';
-import Image from '../components/Image';
-import CartoonImage from '../../assets/images/cartoon.png';
+import Navigation from 'components/Navigation';
+import Content from 'components/Content';
+import Title from 'components/Title';
+import Image from 'components/Image';
+import CartoonImage from 'assets/images/cartoon.png';
 
 const About = () => (
   <>

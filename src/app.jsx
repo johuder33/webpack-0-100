@@ -3,9 +3,9 @@ import {
   useRoutes,
   Navigate
 } from "react-router-dom";
-import Home from './pages/Home';
-import About from './pages/About';
-import NotFound from './pages/Error';
+import Home from 'pages/Home';
+import About from 'pages/About';
+import NotFound from 'pages/Error';
 
 const Routes = () => {
   const routes = [

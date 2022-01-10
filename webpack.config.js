@@ -17,6 +17,12 @@ module.exports = {
   resolve: {
     modules: ['node_modules'],
     extensions: ['.js', '.jsx'],
+    alias: {
+      components: resolve('src', 'components'),
+      styles: resolve('src', 'styles'),
+      pages: resolve('src', 'pages'),
+      assets: resolve('assets'),
+    },
   },
   entry: {
     script: resolve('src', 'index.js')
