@@ -45,7 +45,19 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
-      }
+      },
+      {
+        test: /\.(jpeg?|png|gif|ttf)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'static/[hash][ext][query]'
+        }
+      },
+      // data URI assets ? uncomment me
+      // {
+      //   test: /\.(ttf)$/,
+      //   type: 'asset/inline'
+      // }
     ]
   },
   plugins: [
