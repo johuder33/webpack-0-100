@@ -1,3 +1,4 @@
+const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { resolve } = require('path');
@@ -7,24 +8,28 @@ process.env.NODE_ENV = 'development';
 
 module.exports = {
   devtool: false,
+  resolve: {
+    modules: ['node_modules'],
+    extensions: ['.js', '.jsx'],
+  },
   entry: {
     script: resolve('src', 'index.js')
   },
   output: {
     clean: true,
     // contenthash, id, name, 
-    filename: '[name].build.js',
-    library: 'clipperCore'
+    filename: '[name].build.js'
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
             presets: [
+              '@babel/preset-react',
               [
                 '@babel/preset-env',
                 {
@@ -62,12 +67,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: resolve('public', 'index.html'),
-      inject: 'head',
-      scriptLoading: 'blocking'
+      template: resolve('public', 'index.html')
     }),
     new MiniCssExtractPlugin({
       filename: 'style.bundle.css'
     }),
+    new Webpack.ProvidePlugin({
+      React: 'react'
+    })
   ]
 };
