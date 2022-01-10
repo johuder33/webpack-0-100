@@ -33,11 +33,22 @@ main {
   cursor: pointer;
 }
 
-#main-title {
+.main-title {
   font-size: 32px;
 }
 
-#cartoon {
-  max-width: 150px;
+.image {
   margin: auto;
+
+  &.small {
+    max-width: 100px;
+  }
+
+  &.medium {
+    max-width: 150px;
+  }
+
+  &.large {
+    max-width: 200px;
+  }
 }
