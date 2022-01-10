@@ -10,7 +10,8 @@ module.exports = {
   devServer: {
     port: 5000,
     static: resolve('dist'),
-    compress: true
+    compress: true,
+    // historyApiFallback: true,
   },
   devtool: false,
   resolve: {
