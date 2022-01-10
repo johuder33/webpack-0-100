@@ -13,8 +13,7 @@ module.exports = {
     clean: true,
     // contenthash, id, name, 
     filename: '[name].build.js',
-    library: 'clipperCore',
-    globalObject: 'this'
+    library: 'clipperCore'
   },
   module: {
     rules: [
@@ -24,7 +23,17 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
+            presets: [
+              [
+                '@babel/preset-env',
+                {
+                  targets: {
+                    // chrome: '98' // no need polyfill for this chrome version
+                    chrome: '45' // need polyfill for this old chrome version
+                  }
+                }
+              ]
+            ],
           }
         }
       }
