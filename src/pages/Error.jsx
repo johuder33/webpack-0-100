@@ -12,9 +12,13 @@ const Error = () => (
         { label: 'About me', to: '/about' }
       ]}
     />
-    <section>
+    <section className="section">
       <Title>Ops... are you lost ?</Title>
       <Content>
+        <Image src={ErrorImage} alt="404 image" />
+        <Image src={ErrorImage} alt="404 image" size="medium" />
+        <Image src={ErrorImage} alt="404 image" size="large" />
+        <Image src={ErrorImage} alt="404 image" size="medium" />
         <Image src={ErrorImage} alt="404 image" />
       </Content>
     </section>

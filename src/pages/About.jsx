@@ -14,7 +14,7 @@ const About = () => (
         { label: 'Woohoo' },
       ]}
     />
-    <section>
+    <section className="section">
       <Title>Webpack from 0 to 100, but now you're a Webpack Master Ninja 🥷</Title>
       <Content>
         <Image src={CartoonImage} alt="cartoon image" />

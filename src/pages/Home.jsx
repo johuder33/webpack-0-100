@@ -13,7 +13,7 @@ const Home = () => (
         { label: 'Woohoo' },
       ]}
     />
-    <section>
+    <section className="section">
       <Title>Webpack from 0 to 100</Title>
       <Content>
         <Image src={CartoonImage} alt="cartoon image" />
