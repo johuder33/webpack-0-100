@@ -7,6 +7,11 @@ const { resolve } = require('path');
 process.env.NODE_ENV = 'development';
 
 module.exports = {
+  devServer: {
+    port: 5000,
+    static: resolve('dist'),
+    compress: true
+  },
   devtool: false,
   resolve: {
     modules: ['node_modules'],
