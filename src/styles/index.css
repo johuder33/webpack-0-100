@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#main-menu ul {
+  background-color: #12a4d9;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#main-menu ul li {
+  flex: 0 0 100px;
+  list-style: none;
+  padding: 10px 5px;
+  color: #322e2f;
+  font-weight: bold;
+}
+
+#main-menu ul li span {
+  cursor: pointer;
+}
+
+#main-title {
+  font-size: 32px;
+}

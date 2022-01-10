@@ -4,12 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/styles/index.css" />
   <title>Webpack from 0 to 100</title>
 </head>
 <body>
-  <h1>Webpack from 0 to 100</h1>
+  <main>
+    <nav id="main-menu">
+      <ul>
+        <li>
+          <span>My Page</span>
+        </li>
+        <li>
+          <span>About me</span>
+        </li>
+      </ul>
+    </nav>
+    <section id="content">
+      <h1 id="main-title">Webpack from 0 to 100</h1>
+      <article>
+        <p>Hello this is my first simple webapp using webpack from scratch woohoo 😃</p>
+      </article>
+    </section>
+  </main>
   <script>
-    const webclipper = new window.clipperCore.default();
+    var webclipper = new window.clipperCore.default();
     webclipper.serialize();
   </script>
 </body>
