@@ -1,3 +1,5 @@
+import './styles/index.css';
+
 const config = {
   baseUrl: 'https://evernote.com/api',
   path: '/v1/notes'

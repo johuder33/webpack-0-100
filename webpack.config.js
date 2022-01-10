@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { resolve } = require('path');
 
 // if "mode" is not set, will take process.env.NODE_ENV value, otherwise will fallback to production
@@ -36,6 +37,10 @@ module.exports = {
             ],
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       }
     ]
   },
@@ -44,6 +49,9 @@ module.exports = {
       template: resolve('public', 'index.html'),
       inject: 'head',
       scriptLoading: 'blocking'
-    })
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'style.bundle.css'
+    }),
   ]
 };
