@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 html, body {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@ main {
 }
 
 #main-menu ul {
-  background-color: #12a4d9;
+  background-color: $color-nav;
   padding: 0;
   margin: 0;
   display: flex;
@@ -21,7 +23,7 @@ main {
   flex: 0 0 100px;
   list-style: none;
   padding: 10px 5px;
-  color: #322e2f;
+  color: $color-nav-link;
   font-weight: bold;
 }
 
